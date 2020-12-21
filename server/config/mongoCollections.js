@@ -19,5 +19,7 @@ const getCollectionFn = collection => {
 module.exports = {
     users: getCollectionFn("users"),
     roles: getCollectionFn("roles"),
-    permissions: getCollectionFn("permissions")
+    permissions: getCollectionFn("permissions"),
+    roles_permissions: getCollectionFn("roles_permissions"),
+    users_roles: getCollectionFn("users_roles")
 };

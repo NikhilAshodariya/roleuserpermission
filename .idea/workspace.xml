@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="563cc077-0786-4844-a57b-1f1280422ba6" name="Default Changelist" comment="" />
+    <list default="true" id="563cc077-0786-4844-a57b-1f1280422ba6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/mongoCollections.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/mongoCollections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/permission_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/permission_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/role_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/role_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/user_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/user_data.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +54,16 @@
       <recent name="$PROJECT_DIR$/server" />
     </key>
   </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -60,7 +77,9 @@
       <workItem from="1602444252593" duration="192000" />
       <workItem from="1602445201244" duration="2817000" />
       <workItem from="1602463648072" duration="3784000" />
-      <workItem from="1602468642264" duration="4218000" />
+      <workItem from="1602468642264" duration="4595000" />
+      <workItem from="1602475770192" duration="1962000" />
+      <workItem from="1608257355264" duration="17073000" />
     </task>
     <servers />
   </component>
@@ -84,22 +103,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="401" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1602446857967" />
-    <state width="1419" height="255" key="GridCell.Tab.0.bottom" timestamp="1602474641104">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1419" height="252" key="GridCell.Tab.0.bottom" timestamp="1608507970350">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1419" height="255" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602474641104" />
-    <state width="1419" height="255" key="GridCell.Tab.0.center" timestamp="1602474641101">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1419" height="255" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1602475764204" />
+    <state width="1419" height="252" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1608507970350" />
+    <state width="1419" height="252" key="GridCell.Tab.0.center" timestamp="1608507970349">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1419" height="255" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602474641101" />
-    <state width="1419" height="255" key="GridCell.Tab.0.left" timestamp="1602474641100">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1419" height="255" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1602475764202" />
+    <state width="1419" height="252" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1608507970349" />
+    <state width="1419" height="252" key="GridCell.Tab.0.left" timestamp="1608507970348">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1419" height="255" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602474641100" />
-    <state width="1419" height="255" key="GridCell.Tab.0.right" timestamp="1602474641102">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1419" height="255" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1602475764201" />
+    <state width="1419" height="252" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1608507970348" />
+    <state width="1419" height="252" key="GridCell.Tab.0.right" timestamp="1608507970349">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state width="1419" height="255" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602474641102" />
+    <state width="1419" height="255" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1602475764203" />
+    <state width="1419" height="252" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1608507970349" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1602447985465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

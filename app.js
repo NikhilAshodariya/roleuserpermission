@@ -10,6 +10,7 @@ const PORT = 8081;
 const indexRouter = require('./server/routes/index');
 const usersRouter = require('./server/routes/user_routes');
 const permissionRouter = require('./server/routes/permission_routes');
+const rolesPermissionRouter = require('./server/routes/roles_permission_routes');
 
 // server start
 const app = express();
@@ -22,7 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use("/permissions", permissionRouter);
+app.use('/permissions', permissionRouter);
+app.use('/rolesPermissions',rolesPermissionRouter);
 
 
 app.listen(PORT, () => {
