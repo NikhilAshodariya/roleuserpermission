@@ -33,17 +33,15 @@ getPermissionByName = async (permission_name) => {
 
 deletePermission = async (permission_name) => {
     let permissionCollections = await Permissions();
-    let returnInfo = await getPermissionByName(permission_name);
-    await permissionCollections.deleteOne({
+
+    return permissionCollections.deleteOne({
         permission_name: permission_name
     });
-
-    return returnInfo;
 }
 
 getAllPermissions = async () => {
-    let permissionCollections = Permissions();
-    return permissionCollections.find({}).toArray();
+    let permissionCollections = await Permissions();
+    return permissionCollections.find().toArray();
 };
 
 
