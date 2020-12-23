@@ -26,7 +26,7 @@ createUser = async (data) => {
 getUserByEmail = async (email) => {
     let usersCollection = await Users();
 
-    return await usersCollection.findOne({
+    return usersCollection.findOne({
         email: email
     });
 };
@@ -34,12 +34,9 @@ getUserByEmail = async (email) => {
 removeUser = async (email) => {
     let usersCollection = await Users();
 
-    let returnInfo = await getUserByEmail(email);
-    await usersCollection.deleteOne({
+    return usersCollection.deleteOne({
         email: email
     });
-
-    return returnInfo;
 };
 
 module.exports = {
