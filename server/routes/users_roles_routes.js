@@ -21,7 +21,7 @@ const assignRoleToUser = async (req, res, next) => {
 
 const unassignPermissionToRole = async (req, res, next) => {
     try {
-        let check = await UsersRolesData.unassignRoleToUser(req.body.role_name, req.body.permission_name);
+        let check = await UsersRolesData.unassignRoleToUser(req.body.email, req.body.role_name);
         res.send(check);
     }
     catch(e) {

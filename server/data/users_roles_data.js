@@ -58,29 +58,38 @@ assignRoleToUser = async (email, role_name) => {
     }
 };
 
-unassignRoleToUser = async (role_name, permission_name) => {
-    let rolepermissioncollections = await Roles_Permissions();
-    let role = await Roles.getRoleByName(role_name);
-    let permission = await Permissions.getPermissionByName(permission_name);
+unassignRoleToUser = async (email, role_name) => {
+    let usersrolescollections = await Users_Roles();
 
-    let rolepermission = await rolepermissioncollections.findOne({
-        "role_name": role_name
+    let role = await Roles.getRoleByName(role_name);
+    let user = await Users.getUserByEmail(email);
+
+    let user_role = await usersrolescollections.findOne({
+        email: email
     });
 
-    if (rolepermission === null || rolepermission === undefined) {
-        throw ("Role is not present");
+    if (role === undefined || role === null) {
+        throw ("role does not exists");
+    }
+
+    if (user === undefined || user === null) {
+        throw ("user does not exists");
+    }
+
+    if (user_role === null || user_role === undefined) {
+        throw ("User is not present");
     } else {
-        let check = rolepermission.permission_lis.filter(obj => obj.permission_name === permission_name);
+        let check = user_role.roles_lis.filter(obj => obj.role_name === role_name);
         if (check === null || check === undefined) {
-            throw ("No such permission exists");
+            throw ("No such role exists");
         }
         else {
-            return rolepermissioncollections.updateOne({
-                _id: rolepermission["_id"]
+            return usersrolescollections.updateOne({
+                _id: user_role["_id"]
             }, {
                 "$pull": {
-                    "permission_lis": {
-                        permission_name: permission_name
+                    "roles_lis": {
+                        role_name: role_name
                     }
                 }
             });
