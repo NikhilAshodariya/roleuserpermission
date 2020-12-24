@@ -29,7 +29,7 @@ coverage
 .grunt
 
 # omiting intellij packages
-.idea
+.idea/
 
 # Bower dependency directory (https://bower.io/)
 bower_components
