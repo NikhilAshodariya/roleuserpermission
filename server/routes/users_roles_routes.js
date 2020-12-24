@@ -3,8 +3,6 @@ const express = require('express');
 const UsersRolesData = require("../data/users_roles_data.js");
 const router = express.Router();
 
-//Todo: All the below is yet to work on
-
 const findByUserEmail = async (req, res, next) => {
     res.send(await UsersRolesData.findByUserName(req.params.email));
 };
